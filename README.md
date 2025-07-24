@@ -159,6 +159,29 @@ The frontend application will be available at `http://localhost:3000`
 - Visit `http://localhost:5000/health` to check backend status
 - Visit `http://localhost:3000` to access the frontend application
 
+## Docker Setup
+
+### Prerequisites
+- Docker and Docker Compose installed
+- AWS CLI configured (for cloud deployment)
+- Terraform installed
+
+### Local Development with Docker
+
+#### Quick Start
+```bash
+# Clone the repository
+git clone https://github.com/bvilane/wildtrack-safari-platform.git
+cd wildtrack-safari-platform
+
+# Start all services
+docker-compose up --build
+
+# The application will be available at:
+# Frontend: http://localhost:3000
+# Backend API: http://localhost:5000
+# Database: localhost:5432
+
 ## Testing
 
 ### Backend Testing
@@ -265,4 +288,4 @@ This project is developed as part of the Advanced DevOps course curriculum.
 
 ---
 
-*Last Updated: July 2, 2025*
+*Last Updated: July 24, 2025*
