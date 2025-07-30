@@ -267,6 +267,41 @@ feat(sightings): add GPS coordinate validation
 
 Closes #23
 ```
+## Live Environments
+
+### Production Environment
+**Live URL**: [To be deployed]
+- Automatically deployed from `main` branch
+- Full production monitoring and alerts
+- Manual approval required for deployment
+
+### Staging Environment  
+**Staging URL**: [To be deployed]
+- Automatically deployed from `develop` branch
+- Testing and validation environment
+- Pre-production feature testing
+
+## Continuous Deployment
+
+Our CD pipeline automatically:
+1. **Builds** application on code changes
+2. **Tests** all functionality with automated test suite  
+3. **Scans** for security vulnerabilities
+4. **Deploys** to staging environment (develop branch)
+5. **Deploys** to production (main branch with approval)
+
+## Monitoring & Observability
+
+- **Application Logging**: Comprehensive request/error logging
+- **Performance Metrics**: Response times, throughput, error rates
+- **Infrastructure Monitoring**: Container health, database performance
+- **Alerting**: Automated alerts for system anomalies
+
+## Video Demonstration
+
+**Phase 3 Demo Video**: [Link to be added]
+
+Demonstrates complete automated deployment workflow from code change to production release.
 
 ## Project Management
 
