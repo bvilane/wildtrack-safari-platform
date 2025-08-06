@@ -1,0 +1,43 @@
+name: Deploy Frontend to App Runner
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    name: Build and Deploy to App Runner
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Install Dependencies
+      run: npm install
+      working-directory: ./frontend
+
+    - name: Build Frontend
+      run: npm run build
+      working-directory: ./frontend
+
+    - name: Login to Amazon ECR
+      uses: aws-actions/amazon-ecr-login@v1
+
+    - name: Build Docker Image
+      run: |
+        docker build -t ${{ secrets.ECR_REPO }} ./frontend
+        docker tag ${{ secrets.ECR_REPO }}:latest ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.ECR_REPO }}:latest
+
+    - name: Push Docker Image to ECR
+      run: |
+        docker push ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/${{ secrets.ECR_REPO }}:latest
+
+    - name: Trigger App Runner Deployment
+      run: |
+        aws apprunner start-deployment --service-arn ${{ secrets.APP_RUNNER_SERVICE_ARN }} --region ${{ secrets.AWS_REGION }}
