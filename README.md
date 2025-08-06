@@ -1,6 +1,6 @@
-#WildTrack: Safari Wildlife Sighting Platform
+# WildTrack: Safari Wildlife Sighting Platform
 
-[![CI Status](https://github.com/[your-username]/wildtrack-safari-platform/workflows/WildTrack%20CI%20Pipeline/badge.svg)](https://github.com/[your-username]/wildtrack-safari-platform/actions)
+[![CI Status](https://github.com/bvilane/wildtrack-safari-platform/workflows/WildTrack%20CI%20Pipeline/badge.svg)](https://github.com/[your-username]/wildtrack-safari-platform/actions)
 [![Coverage Status](https://codecov.io/gh/[your-username]/wildtrack-safari-platform/branch/main/graph/badge.svg)](https://codecov.io/gh/[your-username]/wildtrack-safari-platform)
 
 ## Project Description
