@@ -19,7 +19,7 @@ COPY . .
 EXPOSE 5000
 CMD ["npm", "run", "dev"]
 
-# Production stage
+# Production stage (used for App Runner deployment)
 FROM base AS production
 WORKDIR /app
 
@@ -34,4 +34,9 @@ COPY --chown=wildtrack:nodejs . .
 USER wildtrack
 
 EXPOSE 5000
+
+# NOTE: This stage is used by AWS App Runner.
+# Make sure to set port 5000 in App Runner.
+# To build for production use:
+#    docker build -t wildtrack-api .
 CMD ["npm", "start"]
