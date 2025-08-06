@@ -299,7 +299,7 @@ Our CD pipeline automatically:
 
 ## Video Demonstration
 
-**Phase 3 Demo Video**: [Link to be added]
+**Phase 3 Demo Video**: https://youtu.be/FrEEgeHbqTY
 
 Demonstrates complete automated deployment workflow from code change to production release.
 
@@ -323,4 +323,4 @@ This project is developed as part of the Advanced DevOps course curriculum.
 
 ---
 
-*Last Updated: July 24, 2025*
+*Last Updated: August 06, 2025*

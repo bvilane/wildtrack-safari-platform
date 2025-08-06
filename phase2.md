@@ -3,21 +3,10 @@
 ## Live Application URL
 🌐 **Live URL**: https://pkdkdsk452.us-east-1.awsapprunner.com/
 
-## Provisioned Resources Screenshots
-### AWS Resources Overview
-![AWS Console Overview](screenshots/aws-overview.png)
-
-### ECR Repository
-![ECR Repository](screenshots/ecr-repository.png)
-
-### RDS Database
-![RDS Database](screenshots/rds-database.png)
-
-### VPC and Networking
-![VPC Setup](screenshots/vpc-networking.png)
+- You can find all screenshots of successfully provisioned infrastructure resources in the [screenshots/](https://github.com/bvilane/wildtrack-safari-platform/tree/main/screenshots) folder in this repository.
 
 ## Peer Review
-📝 **Pull Request Reviewed**: [Link to peer's PR you reviewed]
+📝 **Pull Request Reviewed**: [\[Link to peer's PR reviewed\]](https://github.com/ayadeleke/GreenLife-Eco-Tracker/pull/143)
 
 ## Reflection
 
@@ -46,7 +35,3 @@
 - Add monitoring and logging infrastructure
 - Optimize container images further
 - Implement secrets management
-
----
-*Deployment completed on: [Date]*
-*Total setup time: [X hours]*
