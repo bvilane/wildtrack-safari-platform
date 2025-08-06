@@ -18,6 +18,7 @@ describe('Sightings API', () => {
         species: 'African Elephant',
         location: { lat: -24.7761, lng: 25.8569 },
         observer: 'Test Guide',
+        observerRole: 'guide', 
         notes: 'Large bull elephant'
       };
 

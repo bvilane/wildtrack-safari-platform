@@ -1,7 +1,7 @@
 # Phase 2: IaC, Containerization & Manual Deployment
 
 ## Live Application URL
-🌐 **Live URL**: [Your deployed application URL here]
+🌐 **Live URL**: https://pkdkdsk452.us-east-1.awsapprunner.com/
 
 ## Provisioned Resources Screenshots
 ### AWS Resources Overview

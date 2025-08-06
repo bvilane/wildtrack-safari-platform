@@ -2,9 +2,9 @@ name: WildTrack CD Pipeline
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main, develop ]
+    branches: [main, develop]
 
 env:
   AWS_REGION: us-east-1
@@ -77,5 +77,23 @@ jobs:
     environment: production
     steps:
     - uses: actions/checkout@v4
-    - name: Deploy to production
-      run: echo "Deploying to production environment"
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v2
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+
+    - name: Log in to Amazon ECR
+      id: login-ecr
+      uses: aws-actions/amazon-ecr-login@v1
+
+    - name: Build and push Docker image
+      run: |
+        docker build -t wildtrack-safari-platform:latest ./backend
+        docker tag wildtrack-safari-platform:latest ${{ steps.login-ecr.outputs.registry }}/wildtrack-safari-platform:latest
+        docker push ${{ steps.login-ecr.outputs.registry }}/wildtrack-safari-platform:latest
+
+    - name: Deploy to App Runner
+      run: ./scripts/deploy.sh
