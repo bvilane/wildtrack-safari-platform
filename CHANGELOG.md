@@ -28,3 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Dependency vulnerability scanning implemented
 - Container security scanning integrated
 - Security scan results documented and addressed
+
+## [v1.0.1] - 2025-08-06
+### Changed
+- Updated homepage header text
