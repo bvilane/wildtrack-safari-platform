@@ -75,7 +75,7 @@ export default function Home() {
     <div style={containerStyle}>
       <div style={heroStyle}>
         <h1 style={{ fontSize: '3rem', margin: '0 0 1rem 0', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>
-          🦁 Welcome to WildTrack
+          🦁 Welcome to the WildTrack Safari Experience
         </h1>
         <p style={{ fontSize: '1.2rem', opacity: 0.9, maxWidth: '600px', margin: '0 auto 2rem auto' }}>
           Advanced Wildlife Sighting & Tracking System for Safari Lodges

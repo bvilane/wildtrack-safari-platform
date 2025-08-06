@@ -4,7 +4,7 @@
 - **Duration**: 10 minutes maximum
 - **Quality**: Minimum 720p
 - **Format**: MP4
-- **Status**: 🔄 In Progress
+- Link to Final Video: https://youtu.be/FrEEgeHbqTY
 
 ## Demonstration Sequence
 
@@ -38,9 +38,8 @@
 - [ ] Summarize successful automated deployment
 
 ## Live URLs
-- **Staging**: [To be deployed]
-- **Production**: [To be deployed]
+- **Production**: https://pkdkdsk452.us-east-1.awsapprunner.com/ 
 
 ## Video Upload
 - **File**: [To be uploaded]
-- **YouTube Link**: [To be added to README]
+- **YouTube Link**: https://youtu.be/FrEEgeHbqTY
