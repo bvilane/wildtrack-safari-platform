@@ -1,6 +1,6 @@
-#WildTrack: Safari Wildlife Sighting Platform
+# WildTrack: Safari Wildlife Sighting Platform
 
-[![CI Status](https://github.com/[your-username]/wildtrack-safari-platform/workflows/WildTrack%20CI%20Pipeline/badge.svg)](https://github.com/[your-username]/wildtrack-safari-platform/actions)
+[![CI Status](https://github.com/bvilane/wildtrack-safari-platform/workflows/WildTrack%20CI%20Pipeline/badge.svg)](https://github.com/[your-username]/wildtrack-safari-platform/actions)
 [![Coverage Status](https://codecov.io/gh/[your-username]/wildtrack-safari-platform/branch/main/graph/badge.svg)](https://codecov.io/gh/[your-username]/wildtrack-safari-platform)
 
 ## Project Description
@@ -21,7 +21,7 @@ WildTrack provides a centralized platform where safari guides and guests can log
 - **Guests**: Enhanced safari experience with species information and activity tracking
 - **Conservation**: Data collection for wildlife monitoring and research
 
-##  Key Features
+##  Key Features - https://youtu.be/FrEEgeHbqTY
 
 ### User Management System
 - Role-based access control (Guides, Guests, Management)
@@ -88,6 +88,8 @@ wildtrack-safari-platform/
 ├── .github/workflows/  # CI/CD pipeline configuration
 └── README.md
 ```
+
+### Link to Video - 
 
 ## Local Development Setup
 
