@@ -21,7 +21,7 @@ WildTrack provides a centralized platform where safari guides and guests can log
 - **Guests**: Enhanced safari experience with species information and activity tracking
 - **Conservation**: Data collection for wildlife monitoring and research
 
-##  Key Features
+##  Key Features - https://youtu.be/FrEEgeHbqTY
 
 ### User Management System
 - Role-based access control (Guides, Guests, Management)
@@ -88,6 +88,8 @@ wildtrack-safari-platform/
 ├── .github/workflows/  # CI/CD pipeline configuration
 └── README.md
 ```
+
+### Link to Video - 
 
 ## Local Development Setup
 
